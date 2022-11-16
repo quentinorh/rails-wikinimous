@@ -1,0 +1,10 @@
+<h1>Edit article</h1>
+
+<%= form_with model: @article do |f| %>
+  <%= f.label :title, :class => "mt-4 form-label" %>
+  <%= f.text_field :title, :class => "form-control" %>
+  <%= f.label :content, :class => "mt-4 form-label" %>
+  <%= f.text_field :content, :class => "form-control" %>
+  <br>
+  <%= f.submit :class => "mt-4 btn btn-primary" %>
+<% end %>
